@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="-分享 -笔记," />
 
 
 
@@ -80,21 +80,22 @@
 
 
 <meta name="description" content="最近回顾了一下css的一些知识，还是“捡回”了不少东西，所以决定总结一下。主要的知识点有：   1、盒子居中问题（margin:0 auto;） 2、外边距合并问题   1、局中问题居中是最最常见的布局，我们通常要使得盒子里面的内容居中显示，最经常使用text-align属性。1text-align:center; 这个属性可以让盒子内容（包括 行内元素 行块级元素 文字）居中显示 要让整个di">
+<meta name="keywords" content="-分享 -笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第三篇博客-css回顾及总结1">
 <meta property="og:url" content="http://yoursite.com/2019/03/25/第三篇博客-css回顾及总结1/index.html">
 <meta property="og:site_name" content="Fs-carefree-fish">
 <meta property="og:description" content="最近回顾了一下css的一些知识，还是“捡回”了不少东西，所以决定总结一下。主要的知识点有：   1、盒子居中问题（margin:0 auto;） 2、外边距合并问题   1、局中问题居中是最最常见的布局，我们通常要使得盒子里面的内容居中显示，最经常使用text-align属性。1text-align:center; 这个属性可以让盒子内容（包括 行内元素 行块级元素 文字）居中显示 要让整个di">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/03/25/img/盒子居中.png">
-<meta property="og:image" content="http://yoursite.com/2019/03/25/img/外边距合并.png">
-<meta property="og:image" content="http://yoursite.com/2019/03/25/img/嵌套1.png">
-<meta property="og:image" content="http://yoursite.com/2019/03/25/img/嵌套2.png">
-<meta property="og:updated_time" content="2019-03-25T03:06:56.002Z">
+<meta property="og:image" content="http://yoursite.com/img/盒子居中.png">
+<meta property="og:image" content="http://yoursite.com/img/外边距合并.png">
+<meta property="og:image" content="http://yoursite.com/img/嵌套1.png">
+<meta property="og:image" content="http://yoursite.com/img/嵌套2.png">
+<meta property="og:updated_time" content="2019-03-25T03:11:11.082Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第三篇博客-css回顾及总结1">
 <meta name="twitter:description" content="最近回顾了一下css的一些知识，还是“捡回”了不少东西，所以决定总结一下。主要的知识点有：   1、盒子居中问题（margin:0 auto;） 2、外边距合并问题   1、局中问题居中是最最常见的布局，我们通常要使得盒子里面的内容居中显示，最经常使用text-align属性。1text-align:center; 这个属性可以让盒子内容（包括 行内元素 行块级元素 文字）居中显示 要让整个di">
-<meta name="twitter:image" content="http://yoursite.com/2019/03/25/img/盒子居中.png">
+<meta name="twitter:image" content="http://yoursite.com/img/盒子居中.png">
 
 
 
@@ -287,6 +288,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web前端-css/" itemprop="url" rel="index">
+                    <span itemprop="name">-Web前端 -css</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -356,12 +379,12 @@
 <p>1、局中问题<br>居中是最最常见的布局，我们通常要使得盒子里面的内容居中显示，最经常使用text-align属性。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">text-align</span><span class="selector-pseudo">:center</span>;</span><br></pre></td></tr></table></figure></p>
 <p>这个属性可以让盒子内容（包括 行内元素 行块级元素 文字）居中显示</p>
 <p>要让整个div盒子直接在浏览器上面水平居中显示，可以用<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">margin</span><span class="selector-pseudo">:0</span> <span class="selector-tag">auto</span>;</span><br></pre></td></tr></table></figure></p>
-<p>其中有几个注意的地方，auto属性是让盒子外面自动充满，在left 和 right两个位置外面都自动充满的时候，盒子就会被两边的空白顶到最中间。<br>另外，盒子必须是块级元素（才可以设置宽高），而且盒子必须设置宽度才能起效。<br><img src="../img/盒子居中.png" alt="cmd-markdown-logo"></p>
+<p>其中有几个注意的地方，auto属性是让盒子外面自动充满，在left 和 right两个位置外面都自动充满的时候，盒子就会被两边的空白顶到最中间。<br>另外，盒子必须是块级元素（才可以设置宽高），而且盒子必须设置宽度才能起效。<br><img src="/img/盒子居中.png" alt="cmd-markdown-logo"></p>
 <p>居中问题“如此深奥”这里分享一篇博客总结居中问题的：<a href="https://blog.csdn.net/qq_27576607/article/details/78697812" target="_blank" rel="noopener">https://blog.csdn.net/qq_27576607/article/details/78697812</a></p>
-<p>2、外边距合并问题<br>2.1 外边距塌陷：css有一个外边距合并问题，总结起来就是：当上下两个块级元素相遇时，如果上盒子加了border-bottom，下盒子加了border-top，则两个盒子上下间距不是简单的相加，而是取决其中最大者，这种现象也叫外边距塌陷。<br><img src="../img/外边距合并.png" alt="cmd-markdown-logo"><br>2.2 嵌套块级元素垂直外边距合并：如果父元素没有上内边距或边框，父元素上边距会与子元素上边距合并，合并后的外边距为其中较大者。</p>
+<p>2、外边距合并问题<br>2.1 外边距塌陷：css有一个外边距合并问题，总结起来就是：当上下两个块级元素相遇时，如果上盒子加了border-bottom，下盒子加了border-top，则两个盒子上下间距不是简单的相加，而是取决其中最大者，这种现象也叫外边距塌陷。<br><img src="/img/外边距合并.png" alt="cmd-markdown-logo"><br>2.2 嵌套块级元素垂直外边距合并：如果父元素没有上内边距或边框，父元素上边距会与子元素上边距合并，合并后的外边距为其中较大者。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="fa"&gt;</span><br><span class="line">      &lt;div class="son"&gt;</span><br><span class="line"></span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    .fa&#123;</span><br><span class="line">        width: <span class="number">500</span>px;</span><br><span class="line">        height: <span class="number">500</span>px;</span><br><span class="line">        background-color: pink;</span><br><span class="line">        /* border: <span class="number">1</span>px solid black; 添加边框*/</span><br><span class="line">        /* padding-top:<span class="number">2</span>px; 添加内边距*/</span><br><span class="line">        margin-top:<span class="number">50</span>px; </span><br><span class="line">    &#125;</span><br><span class="line">    .son&#123;</span><br><span class="line">        width: <span class="number">200</span>px;</span><br><span class="line">        height: <span class="number">200</span>px;</span><br><span class="line">        background-color: green;</span><br><span class="line">        margin-top:<span class="number">150</span>px; </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="../img/嵌套1.png" alt="cmd-markdown-logo"><br>这种情况可以通过添加内边距或者边框解决。<br><img src="../img/嵌套2.png" alt="cmd-markdown-logo"></p>
+<p><img src="/img/嵌套1.png" alt="cmd-markdown-logo"><br>这种情况可以通过添加内边距或者边框解决。<br><img src="/img/嵌套2.png" alt="cmd-markdown-logo"></p>
 <p>另外的方法是加overflow解决：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">overflow:hidden</span><br></pre></td></tr></table></figure></p>
 <hr>
 
@@ -378,6 +401,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/分享-笔记/" rel="tag"># -分享 -笔记</a>
+          
+        </div>
       
 
       
@@ -479,7 +508,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
